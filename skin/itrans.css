@@ -1,0 +1,42 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#itrans-button
+{
+  list-style-image: url("chrome://itrans/skin/toolbar-button.png");
+  -moz-image-region: rect(24px 24px 48px 0px);
+}
+#itrans-button:hover
+{
+  -moz-image-region: rect(0px 24px 24px  0px);
+}
+#itrans-button.off
+{
+  -moz-image-region: rect(48px 24px 72px  0px);
+}
+#itrans-button.off:hover
+{
+  -moz-image-region: rect(72px 24px 96px  0px);
+}
+
+[iconsize="small"] #itrans-button,
+#itrans-status-bar
+{
+  list-style-image: url("chrome://itrans/skin/toolbar-button.png");
+  -moz-image-region: rect(24px 40px 40px 24px);
+}
+[iconsize="small"] #itrans-button:hover,
+#itrans-status-bar:hover
+{
+  -moz-image-region: rect(0px 40px 16px 24px);
+}
+[iconsize="small"] #itrans-button.off,
+#itrans-status-bar.off
+{
+  -moz-image-region: rect(72px 40px 88px 24px);
+}
+[iconsize="small"] #itrans-button.off:hover,
+#itrans-status-bar.off:hover
+{
+  -moz-image-region: rect(48px 40px 64px 24px);
+}
+

@@ -1,0 +1,60 @@
+<!ENTITY prefwindow.title "Inline Translator preferences">
+<!ENTITY pane.title "Inline Translator preferences">
+<!ENTITY client_id.label "Client ID">
+<!ENTITY client_secret.label "Client secret">
+<!ENTITY max_length.label "Max text length to translate">
+<!ENTITY error_font_color.label "Error font color">
+<!ENTITY blank_font_color.label "No result font color">
+<!ENTITY background_color.label "Background color">
+<!ENTITY shortcut.label "Keyboard Shortcut">
+<!ENTITY translate_on_mouseover.label "Translate on mouse over">
+<!ENTITY translate_on_mouseover_delay.label "Delay">
+<!ENTITY button.confirm "OK">
+
+<!ENTITY language.label "Language 1">
+<!ENTITY language_alt.label "Language 1: alt language">
+<!ENTITY font_color.label "Language 1: font color">
+<!ENTITY second_language.label "Language 2 (additional)">
+<!ENTITY second_language_alt.label "Language 2: alt language">
+<!ENTITY second_font_color.label "Language 2: font color">
+
+<!ENTITY language_alt_tooltip.label "When selected text is default target language, translate text to alt language.">
+
+<!ENTITY language_code.empty "Disabled">
+<!ENTITY language_code.ar "Arabic">
+<!ENTITY language_code.bg "Bulgarian">
+<!ENTITY language_code.ca "Catalan">
+<!ENTITY language_code.zh-CHS "Chinese (simplified)">
+<!ENTITY language_code.zh-CHT "Chinese (traditional)">
+<!ENTITY language_code.cs "Czech">
+<!ENTITY language_code.da "Danish">
+<!ENTITY language_code.nl "Dutch">
+<!ENTITY language_code.en "English">
+<!ENTITY language_code.et "Estonian">
+<!ENTITY language_code.fi "Finnish">
+<!ENTITY language_code.fr "French">
+<!ENTITY language_code.de "German">
+<!ENTITY language_code.el "Greek">
+<!ENTITY language_code.ht "Haitian Creole">
+<!ENTITY language_code.he "Hebrew">
+<!ENTITY language_code.hi "Hindi">
+<!ENTITY language_code.hu "Hungarian">
+<!ENTITY language_code.id "Indonesian">
+<!ENTITY language_code.it "Italian">
+<!ENTITY language_code.ja "Japanese">
+<!ENTITY language_code.ko "Korean">
+<!ENTITY language_code.lv "Latvian">
+<!ENTITY language_code.lt "Lithuanian">
+<!ENTITY language_code.no "Norwegian">
+<!ENTITY language_code.pl "Polish">
+<!ENTITY language_code.pt "Portuguese">
+<!ENTITY language_code.ro "Romanian">
+<!ENTITY language_code.ru "Russian">
+<!ENTITY language_code.sk "Slovak">
+<!ENTITY language_code.sl "Slovenian">
+<!ENTITY language_code.es "Spanish">
+<!ENTITY language_code.sv "Swedish">
+<!ENTITY language_code.th "Thai">
+<!ENTITY language_code.tr "Turkish">
+<!ENTITY language_code.uk "Ukrainian">
+<!ENTITY language_code.vi "Vietnamese">

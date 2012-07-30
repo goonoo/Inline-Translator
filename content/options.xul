@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+  -   Version: MPL 1.1/GPL 2.0/LGPL 2.1
+  -
+  - The contents of this file are subject to the Mozilla Public License Version
+  - 1.1 (the "License"); you may not use this file except in compliance with
+  - the License. You may obtain a copy of the License at
+  - http://www.mozilla.org/MPL/
+  - 
+  - Software distributed under the License is distributed on an "AS IS" basis,
+  - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+  - for the specific language governing rights and limitations under the
+  - License.
+  -
+  - The Original Code is inline translator.
+  -
+  - The Initial Developer of the Original Code is
+  - tenshi.
+  - Portions created by the Initial Developer are Copyright (C) 2008
+  - the Initial Developer. All Rights Reserved.
+  -
+  - Contributor(s):
+  -
+  - Alternatively, the contents of this file may be used under the terms of
+  - either the GNU General Public License Version 2 or later (the "GPL"), or
+  - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+  - in which case the provisions of the GPL or the LGPL are applicable instead
+  - of those above. If you wish to allow use of your version of this file only
+  - under the terms of either the GPL or the LGPL, and not to allow others to
+  - use your version of this file under the terms of the MPL, indicate your
+  - decision by deleting the provisions above and replace them with the notice
+  - and other provisions required by the GPL or the LGPL. If you do not delete
+  - the provisions above, a recipient may use your version of this file under
+  - the terms of any one of the MPL, the GPL or the LGPL.
+  - 
+  - ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://itrans/skin/options.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://itrans/locale/prefwindow.dtd">
+<prefwindow id="itransPreferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&prefwindow.title;">
+	<script type="application/x-javascript">
+	var onChangeSecondLanguage = function(el) {
+		var selectedLanguage = el.value;
+		document.getElementById("second_language_alt_label").disabled=selectedLanguage ? false : true;
+		document.getElementById("second_language_alt").disabled=selectedLanguage ? false : true;
+		document.getElementById("second_font_color_label").disabled=selectedLanguage ? false : true;
+		document.getElementById("second_font_color").disabled=selectedLanguage ? false : true;
+	};
+
+	window.addEventListener("load", function(e) {
+		document.getElementById('second_language').
+				addEventListener('command', function(e) {
+			onChangeSecondLanguage(this);
+		}, true);
+		onChangeSecondLanguage(document.getElementById('second_language'));
+	}, false);
+	</script>
+
+	<prefpane id="pane" label="&pane.title;">
+    <preferences>
+      <preference id="_client_id" name="extensions.itrans.client_id" type="string"/>
+      <preference id="_client_secret" name="extensions.itrans.client_secret" type="string"/>
+      <preference id="_max_length" name="extensions.itrans.max_length" type="int"/>
+      <preference id="_language" name="extensions.itrans.language" type="string"/>
+      <preference id="_language_alt" name="extensions.itrans.language_alt" type="string"/>
+      <preference id="_font_color" name="extensions.itrans.font_color" type="string"/>
+      <preference id="_second_language" name="extensions.itrans.second_language" type="string"/>
+      <preference id="_second_language_alt" name="extensions.itrans.second_language_alt" type="string"/>
+      <preference id="_second_font_color" name="extensions.itrans.second_font_color" type="string"/>
+      <preference id="_error_font_color" name="extensions.itrans.error_font_color" type="string"/>
+      <preference id="_blank_font_color" name="extensions.itrans.blank_font_color" type="string"/>
+      <preference id="_background_color" name="extensions.itrans.background_color" type="string"/>
+      <preference id="_shortcut" name="extensions.itrans.shortcut" type="string"/>
+    </preferences>
+
+	<grid>
+		<columns>
+			<column width="170" />
+			<column flex="1" />
+		</columns>
+		<rows>
+			<row>
+				<label control="client_id">&client_id.label;</label>
+				<spacer/>
+				<textbox id="client_id" preference="_client_id" maxlength="60"/>
+				<button id="find-button" label="How to change Client ID"
+						oncommand="var win = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow('navigator:browser'); var url='http://miya.pe.kr/2012/01/23/how-to-change-app-id-in-inline-translator/'; win.gBrowser.selectedTab=win.gBrowser.addTab(url);window.close();"/>
+			</row>
+			<row>
+				<label control="client_secret">&client_secret.label;</label>
+				<spacer/>
+				<textbox id="client_secret" preference="_client_secret" maxlength="60"/>
+			</row>
+			<row>
+				<label control="max_length">&max_length.label;</label>
+				<spacer/>
+				<textbox type="number" id="max_length" preference="_max_length" maxlength="4" max="9999"/>
+			</row>
+			<row>
+				<label control="language">&language.label;</label>
+				<spacer/>
+				<menulist id="language" preference="_language">
+				  <menupopup>
+						<menuitem label="&language_code.ar;" value="ar"/>
+						<menuitem label="&language_code.bg;" value="bg"/>
+						<menuitem label="&language_code.ca;" value="ca"/>
+						<menuitem label="&language_code.zh-CHS;" value="zh-CHS"/>
+						<menuitem label="&language_code.zh-CHT;" value="zh-CHT"/>
+						<menuitem label="&language_code.cs;" value="cs"/>
+						<menuitem label="&language_code.da;" value="da"/>
+						<menuitem label="&language_code.nl;" value="nl"/>
+						<menuitem label="&language_code.en;" value="en"/>
+						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fi;" value="fi"/>
+						<menuitem label="&language_code.fr;" value="fr"/>
+						<menuitem label="&language_code.de;" value="de"/>
+						<menuitem label="&language_code.el;" value="el"/>
+						<menuitem label="&language_code.ht;" value="ht"/>
+						<menuitem label="&language_code.he;" value="he"/>
+						<menuitem label="&language_code.hi;" value="hi"/>
+						<menuitem label="&language_code.hu;" value="hu"/>
+						<menuitem label="&language_code.id;" value="id"/>
+						<menuitem label="&language_code.it;" value="it"/>
+						<menuitem label="&language_code.ja;" value="ja"/>
+						<menuitem label="&language_code.ko;" value="ko"/>
+						<menuitem label="&language_code.lv;" value="lv"/>
+						<menuitem label="&language_code.lt;" value="lt"/>
+						<menuitem label="&language_code.no;" value="no"/>
+						<menuitem label="&language_code.pl;" value="pl"/>
+						<menuitem label="&language_code.pt;" value="pt"/>
+						<menuitem label="&language_code.ro;" value="ro"/>
+						<menuitem label="&language_code.ru;" value="ru"/>
+						<menuitem label="&language_code.sk;" value="sk"/>
+						<menuitem label="&language_code.sl;" value="sl"/>
+						<menuitem label="&language_code.es;" value="es"/>
+						<menuitem label="&language_code.sv;" value="sv"/>
+						<menuitem label="&language_code.th;" value="th"/>
+						<menuitem label="&language_code.tr;" value="tr"/>
+						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.vi;" value="vi"/>
+				  </menupopup>
+				</menulist>
+			</row>
+			<row>
+				<label control="language_alt" tooltiptext="&language_alt_tooltip.label;">&language_alt.label;</label>
+				<spacer/>
+				<menulist id="language_alt" preference="_language_alt">
+				  <menupopup>
+						<menuitem label="&language_code.empty;" value=""/>
+						<menuitem label="&language_code.ar;" value="ar"/>
+						<menuitem label="&language_code.bg;" value="bg"/>
+						<menuitem label="&language_code.ca;" value="ca"/>
+						<menuitem label="&language_code.zh-CHS;" value="zh-CHS"/>
+						<menuitem label="&language_code.zh-CHT;" value="zh-CHT"/>
+						<menuitem label="&language_code.cs;" value="cs"/>
+						<menuitem label="&language_code.da;" value="da"/>
+						<menuitem label="&language_code.nl;" value="nl"/>
+						<menuitem label="&language_code.en;" value="en"/>
+						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fi;" value="fi"/>
+						<menuitem label="&language_code.fr;" value="fr"/>
+						<menuitem label="&language_code.de;" value="de"/>
+						<menuitem label="&language_code.el;" value="el"/>
+						<menuitem label="&language_code.ht;" value="ht"/>
+						<menuitem label="&language_code.he;" value="he"/>
+						<menuitem label="&language_code.hi;" value="hi"/>
+						<menuitem label="&language_code.hu;" value="hu"/>
+						<menuitem label="&language_code.id;" value="id"/>
+						<menuitem label="&language_code.it;" value="it"/>
+						<menuitem label="&language_code.ja;" value="ja"/>
+						<menuitem label="&language_code.ko;" value="ko"/>
+						<menuitem label="&language_code.lv;" value="lv"/>
+						<menuitem label="&language_code.lt;" value="lt"/>
+						<menuitem label="&language_code.no;" value="no"/>
+						<menuitem label="&language_code.pl;" value="pl"/>
+						<menuitem label="&language_code.pt;" value="pt"/>
+						<menuitem label="&language_code.ro;" value="ro"/>
+						<menuitem label="&language_code.ru;" value="ru"/>
+						<menuitem label="&language_code.sk;" value="sk"/>
+						<menuitem label="&language_code.sl;" value="sl"/>
+						<menuitem label="&language_code.es;" value="es"/>
+						<menuitem label="&language_code.sv;" value="sv"/>
+						<menuitem label="&language_code.th;" value="th"/>
+						<menuitem label="&language_code.tr;" value="tr"/>
+						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.vi;" value="vi"/>
+				  </menupopup>
+				</menulist>
+			</row>
+			<row>
+				<label control="font_color">&font_color.label;</label>
+				<spacer/>
+				<colorpicker type="button" id="font_color" preference="_font_color" />
+			</row>
+			<row>
+				<label control="second_language">&second_language.label;</label>
+				<spacer/>
+				<menulist id="second_language" preference="_second_language">
+				  <menupopup>
+						<menuitem label="&language_code.empty;" value=""/>
+						<menuitem label="&language_code.ar;" value="ar"/>
+						<menuitem label="&language_code.bg;" value="bg"/>
+						<menuitem label="&language_code.ca;" value="ca"/>
+						<menuitem label="&language_code.zh-CHS;" value="zh-CHS"/>
+						<menuitem label="&language_code.zh-CHT;" value="zh-CHT"/>
+						<menuitem label="&language_code.cs;" value="cs"/>
+						<menuitem label="&language_code.da;" value="da"/>
+						<menuitem label="&language_code.nl;" value="nl"/>
+						<menuitem label="&language_code.en;" value="en"/>
+						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fi;" value="fi"/>
+						<menuitem label="&language_code.fr;" value="fr"/>
+						<menuitem label="&language_code.de;" value="de"/>
+						<menuitem label="&language_code.el;" value="el"/>
+						<menuitem label="&language_code.ht;" value="ht"/>
+						<menuitem label="&language_code.he;" value="he"/>
+						<menuitem label="&language_code.hi;" value="hi"/>
+						<menuitem label="&language_code.hu;" value="hu"/>
+						<menuitem label="&language_code.id;" value="id"/>
+						<menuitem label="&language_code.it;" value="it"/>
+						<menuitem label="&language_code.ja;" value="ja"/>
+						<menuitem label="&language_code.ko;" value="ko"/>
+						<menuitem label="&language_code.lv;" value="lv"/>
+						<menuitem label="&language_code.lt;" value="lt"/>
+						<menuitem label="&language_code.no;" value="no"/>
+						<menuitem label="&language_code.pl;" value="pl"/>
+						<menuitem label="&language_code.pt;" value="pt"/>
+						<menuitem label="&language_code.ro;" value="ro"/>
+						<menuitem label="&language_code.ru;" value="ru"/>
+						<menuitem label="&language_code.sk;" value="sk"/>
+						<menuitem label="&language_code.sl;" value="sl"/>
+						<menuitem label="&language_code.es;" value="es"/>
+						<menuitem label="&language_code.sv;" value="sv"/>
+						<menuitem label="&language_code.th;" value="th"/>
+						<menuitem label="&language_code.tr;" value="tr"/>
+						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.vi;" value="vi"/>
+				  </menupopup>
+				</menulist>
+			</row>
+			<row>
+				<label id="second_language_alt_label" control="second_language_alt" tooltiptext="&language_alt_tooltip.label;">&second_language_alt.label;</label>
+				<spacer/>
+				<menulist id="second_language_alt" preference="_second_language_alt">
+				  <menupopup>
+						<menuitem label="&language_code.empty;" value=""/>
+						<menuitem label="&language_code.ar;" value="ar"/>
+						<menuitem label="&language_code.bg;" value="bg"/>
+						<menuitem label="&language_code.ca;" value="ca"/>
+						<menuitem label="&language_code.zh-CHS;" value="zh-CHS"/>
+						<menuitem label="&language_code.zh-CHT;" value="zh-CHT"/>
+						<menuitem label="&language_code.cs;" value="cs"/>
+						<menuitem label="&language_code.da;" value="da"/>
+						<menuitem label="&language_code.nl;" value="nl"/>
+						<menuitem label="&language_code.en;" value="en"/>
+						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fi;" value="fi"/>
+						<menuitem label="&language_code.fr;" value="fr"/>
+						<menuitem label="&language_code.de;" value="de"/>
+						<menuitem label="&language_code.el;" value="el"/>
+						<menuitem label="&language_code.ht;" value="ht"/>
+						<menuitem label="&language_code.he;" value="he"/>
+						<menuitem label="&language_code.hi;" value="hi"/>
+						<menuitem label="&language_code.hu;" value="hu"/>
+						<menuitem label="&language_code.id;" value="id"/>
+						<menuitem label="&language_code.it;" value="it"/>
+						<menuitem label="&language_code.ja;" value="ja"/>
+						<menuitem label="&language_code.ko;" value="ko"/>
+						<menuitem label="&language_code.lv;" value="lv"/>
+						<menuitem label="&language_code.lt;" value="lt"/>
+						<menuitem label="&language_code.no;" value="no"/>
+						<menuitem label="&language_code.pl;" value="pl"/>
+						<menuitem label="&language_code.pt;" value="pt"/>
+						<menuitem label="&language_code.ro;" value="ro"/>
+						<menuitem label="&language_code.ru;" value="ru"/>
+						<menuitem label="&language_code.sk;" value="sk"/>
+						<menuitem label="&language_code.sl;" value="sl"/>
+						<menuitem label="&language_code.es;" value="es"/>
+						<menuitem label="&language_code.sv;" value="sv"/>
+						<menuitem label="&language_code.th;" value="th"/>
+						<menuitem label="&language_code.tr;" value="tr"/>
+						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.vi;" value="vi"/>
+				  </menupopup>
+				</menulist>
+			</row>
+			<row>
+				<label id="second_font_color_label" control="second_font_color" disabled="true">&second_font_color.label;</label>
+				<spacer/>
+				<colorpicker type="button" id="second_font_color" preference="_second_font_color" disabled="true" />
+			</row>
+			<row>
+				<label control="background_color">&background_color.label;</label>
+				<spacer/>
+				<colorpicker type="button" id="background_color" preference="_background_color" />
+			</row>
+			<row>
+				<label control="error_font_color">&error_font_color.label;</label>
+				<spacer/>
+				<colorpicker type="button" id="error_font_color" preference="_error_font_color" />
+			</row>
+			<row>
+				<label control="blank_font_color">&blank_font_color.label;</label>
+				<spacer/>
+				<colorpicker type="button" id="blank_font_color" preference="_blank_font_color" />
+			</row>
+			<row>
+				<label control="shortcut">&shortcut.label;</label>
+				<spacer/>
+				<box>Ctrl + Alt + <textbox id="shortcut" preference="_shortcut" maxlength="1" width="20"/></box>
+			</row>
+		</rows>
+	</grid>
+	</prefpane>
+</prefwindow>

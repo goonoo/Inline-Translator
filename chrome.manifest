@@ -1,0 +1,7 @@
+content	itrans	content/
+skin	itrans	classic/1.0	skin/
+locale	itrans	en-US	locale/en-US/
+locale  itrans	ko-KR	locale/ko-KR/
+
+overlay	chrome://browser/content/browser.xul	chrome://itrans/content/firefoxOverlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://itrans/skin/itrans.css

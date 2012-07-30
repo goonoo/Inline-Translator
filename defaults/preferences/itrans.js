@@ -1,0 +1,17 @@
+pref("extensions.itrans.client_id", "itrans");
+pref("extensions.itrans.client_secret", "LsVwdzaipjWhQDGzA6wLWLS7AdCAVLdOSR/yXLSl2uY=");
+pref("extensions.itrans.activated", true);
+pref("extensions.itrans.language", "en");
+pref("extensions.itrans.language_alt", "");
+pref("extensions.itrans.second_language", "");
+pref("extensions.itrans.second_language_alt", "");
+pref("extensions.itrans.max_length", 100);
+pref("extensions.itrans.font_color", "#FFFFFF");
+pref("extensions.itrans.second_font_color", "#FFFF99");
+pref("extensions.itrans.error_font_color", "#FF8888");
+pref("extensions.itrans.blank_font_color", "#999999");
+pref("extensions.itrans.background_color", "#000000");
+pref("extensions.itrans.firstUse", true);
+pref("extensions.itrans.shortcut", "z");
+//pref("extensions.itrans.translate_on_mouseover", bool);
+//pref("extensions.itrans.translate_on_mouseover_delay", 0);

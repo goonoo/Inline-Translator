@@ -1,0 +1,61 @@
+<!ENTITY prefwindow.title "inline translator 환경설정">
+<!ENTITY pane.title "inline translator 환경설정">
+<!ENTITY client_id.label "Client ID">
+<!ENTITY client_secret.label "Client secret">
+<!ENTITY max_length.label "번역할 최대 단어길이">
+<!ENTITY error_font_color.label "오류 폰트색">
+<!ENTITY blank_font_color.label "결과없음 폰트색">
+<!ENTITY background_color.label "배경색">
+<!ENTITY shortcut.label "키보드 단축키">
+<!ENTITY translate_on_mouseover.label "Translate on mouse over">
+<!ENTITY translate_on_mouseover_delay.label "Delay">
+<!ENTITY button.confirm "확인">
+
+<!ENTITY language.label "번역기1 언어">
+<!ENTITY language_alt.label "번역기1 대체언어">
+<!ENTITY font_color.label "번역기1 폰트색">
+<!ENTITY second_language.label "번역기2 언어 (선택사항)">
+<!ENTITY second_language_alt.label "번역기2 대체언어">
+<!ENTITY second_font_color.label "번역기2 폰트색">
+
+<!ENTITY language_alt_tooltip.label "선택된 텍스트가 기본 언어일 때 대체 언어로 번역됩니다.">
+
+<!ENTITY language_code.empty "미사용">
+<!ENTITY language_code.ar "아랍어">
+<!ENTITY language_code.bg "불가리아어">
+<!ENTITY language_code.ca "카탈로니아어">
+<!ENTITY language_code.zh-CHS "중국어 (간체)">
+<!ENTITY language_code.zh-CHT "중국어 (번체)">
+<!ENTITY language_code.cs "체코어">
+<!ENTITY language_code.da "덴마크어">
+<!ENTITY language_code.nl "네덜란드어">
+<!ENTITY language_code.en "영어">
+<!ENTITY language_code.et "에스토니아어">
+<!ENTITY language_code.fi "핀란드어">
+<!ENTITY language_code.fr "프랑스어">
+<!ENTITY language_code.de "독일어">
+<!ENTITY language_code.el "그리스어">
+<!ENTITY language_code.ht "아이티 크리올어">
+<!ENTITY language_code.he "히브리어">
+<!ENTITY language_code.hi "힌디어">
+<!ENTITY language_code.hu "헝가리어">
+<!ENTITY language_code.id "인도네시아어">
+<!ENTITY language_code.it "이탈리아어">
+<!ENTITY language_code.ja "일본어">
+<!ENTITY language_code.ko "한국어">
+<!ENTITY language_code.lv "라트비아어">
+<!ENTITY language_code.lt "리투아니아어">
+<!ENTITY language_code.no "노르웨이어">
+<!ENTITY language_code.pl "폴란드어">
+<!ENTITY language_code.pt "포르투갈어">
+<!ENTITY language_code.ro "루마니아어">
+<!ENTITY language_code.ru "러시아어">
+<!ENTITY language_code.sr "세르비아어">
+<!ENTITY language_code.sk "슬로바키아어">
+<!ENTITY language_code.sl "슬로베니아어">
+<!ENTITY language_code.es "스페인어">
+<!ENTITY language_code.sv "스웨덴어">
+<!ENTITY language_code.th "태국어">
+<!ENTITY language_code.tr "터키어">
+<!ENTITY language_code.uk "우크라이나어">
+<!ENTITY language_code.vi "베트남어">

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://itrans/skin/itrans.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://itrans/locale/itrans.dtd">
+
+<overlay id="itrans-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://itrans/content/scripts/json.js"/>
+  <script type="application/x-javascript" src="chrome://itrans/content/scripts/itrans.js"/>
+  <script type="application/x-javascript" src="chrome://itrans/content/scripts/selection.js"/>
+  <script type="application/x-javascript" src="chrome://itrans/content/scripts/ContentWindow.js"/>
+  <script type="application/x-javascript" src="chrome://itrans/content/scripts/Message.js"/>
+	<script type="application/x-javascript">
+	window.addEventListener("load", function(e) { itrans.init(); }, false);
+	</script>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="itrans-properties" src="chrome://itrans/locale/itrans.properties"/>
+  </stringbundleset>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+	  <toolbarbutton id="itrans-button"
+	    label="&itransToolbar.label;" type="menu-button"
+	    tooltiptext="&itransToolbar.tooltip;"
+			oncommand="itrans.toggleItrans(); event.stopPropagation();"
+			class="toolbarbutton-1 chromeclass-toolbar-additional on"
+			disabled="false"
+			hidden="false">
+			<menupopup>
+				<menuitem
+					label="&itransToolbar.preferences;"
+					oncommand="itrans.openOptions(); event.stopPropagation();"/>
+			</menupopup>
+		</toolbarbutton>
+  </toolbarpalette>
+</overlay>
