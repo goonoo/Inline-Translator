@@ -106,7 +106,7 @@
 				this_.showTranslatedResult(response);
 			};
             var s = document.createElement("script");
-            s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/Translate?appId="+
+            s.src = "https://api.microsofttranslator.com/V2/Ajax.svc/Translate?appId="+
                     "4CEC1ACDC05DD131B324891DEE15AEA26337C236"+
                     "&oncomplete=InlineTranslatorCallback&to=" + TARGET_LANGUAGE + "&text=" + text;
             document.getElementsByTagName("head")[0].appendChild(s);
