@@ -164,6 +164,11 @@ itrans.ContentWindow = itrans.Class({
 				return;
 			} else if (translatedText.indexOf('AppId is over the quota') > 0) {
 				translatedText = document.getElementById("itrans-properties").getString("AppIdOver");
+			} else if (translatedText.indexOf('ArgumentException: The incoming token has expired') > 0) {
+				this_.getAccessToken(function (){
+					var text = itrans.getSelectedText(this_.window_);
+					this_.translate(text);
+				});
 			};
 
 			translatedText = translatedText.replace(/<[^>]*>/g, '');
