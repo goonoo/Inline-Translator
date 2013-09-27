@@ -166,9 +166,10 @@ itrans.ContentWindow = itrans.Class({
 				translatedText = document.getElementById("itrans-properties").getString("AppIdOver");
 			} else if (translatedText.indexOf('ArgumentException') >= 0) {
 				this_.getAccessToken(function () {
-					this_.translate(text);
+					null;
 				});
-			} else {
+				return this_.translate(text);
+			} 
 				translatedText = translatedText.replace(/<[^>]*>/g, '');
 				translatedText = translatedText.replace(/[\s\t\n\r]+/g, ' ');
 				translatedText = translatedText.replace(/\\u000a/g, ' ');
@@ -176,7 +177,6 @@ itrans.ContentWindow = itrans.Class({
 					this_.message_.set1(translatedText);
 				else
 					this_.message_.set2(translatedText);
-			};
 		}, false);
 
 		req.addEventListener('error', function() {
