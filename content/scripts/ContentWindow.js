@@ -81,7 +81,7 @@ itrans.ContentWindow = itrans.Class({
 				return;
       } else {
         var jsonResponse = JSON.parse(req.responseText);
-
+        
         this_.accessToken = jsonResponse.access_token;
         next();
       };
@@ -155,7 +155,7 @@ itrans.ContentWindow = itrans.Class({
 				this_.message_.showError(document.getElementById("itrans-properties").getString("RequestFailed"));
 				return;
 			};
-
+			
 			var translatedText = req.responseText.replace(/"/g, '');
 			if (!translatedText) {
 				translatedText = document.getElementById("itrans-properties").getString("NoResult");
@@ -164,21 +164,19 @@ itrans.ContentWindow = itrans.Class({
 				return;
 			} else if (translatedText.indexOf('AppId is over the quota') > 0) {
 				translatedText = document.getElementById("itrans-properties").getString("AppIdOver");
-			} else if (translatedText.indexOf('ArgumentException: The incoming token has expired') > 0) {
-				this_.getAccessToken(function (){
-					var text = itrans.getSelectedText(this_.window_);
+			} else if (translatedText.indexOf('ArgumentException') >= 0) {
+				this_.getAccessToken(function () {
 					this_.translate(text);
 				});
+			} else {
+				translatedText = translatedText.replace(/<[^>]*>/g, '');
+				translatedText = translatedText.replace(/[\s\t\n\r]+/g, ' ');
+				translatedText = translatedText.replace(/\\u000a/g, ' ');
+				if (isLang1)
+					this_.message_.set1(translatedText);
+				else
+					this_.message_.set2(translatedText);
 			};
-
-			translatedText = translatedText.replace(/<[^>]*>/g, '');
-			translatedText = translatedText.replace(/[\s\t\n\r]+/g, ' ');
-			translatedText = translatedText.replace(/\\u000a/g, ' ');
-
-			if (isLang1)
-				this_.message_.set1(translatedText);
-			else
-				this_.message_.set2(translatedText);
 		}, false);
 
 		req.addEventListener('error', function() {

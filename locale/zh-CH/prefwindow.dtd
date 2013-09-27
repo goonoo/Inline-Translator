@@ -1,0 +1,60 @@
+<!ENTITY prefwindow.title "Inline Translator 选项">
+<!ENTITY pane.title "Inline Translator 首选项">
+<!ENTITY client_id.label "Client ID">
+<!ENTITY client_secret.label "Client secret">
+<!ENTITY max_length.label "最大文本长度">
+<!ENTITY error_font_color.label "请求错误时字体颜色">
+<!ENTITY blank_font_color.label "没有结果时字体颜色">
+<!ENTITY background_color.label "背景颜色">
+<!ENTITY shortcut.label "快捷键">
+<!ENTITY translate_on_mouseover.label "鼠标驻留时翻译">
+<!ENTITY translate_on_mouseover_delay.label "延时">
+<!ENTITY button.confirm "确定">
+
+<!ENTITY language.label "首选语言1">
+<!ENTITY language_alt.label "首选语言1的备选语言">
+<!ENTITY font_color.label "首选语言1的字体颜色">
+<!ENTITY second_language.label "首选语言2（可选）">
+<!ENTITY second_language_alt.label "首选语言2的备选语言">
+<!ENTITY second_font_color.label "首选语言2的字体颜色">
+
+<!ENTITY language_alt_tooltip.label "当所选文本为首选翻译语言时，翻译成备选语言">
+
+<!ENTITY language_code.empty "不可用">
+<!ENTITY language_code.ar "阿拉伯语">
+<!ENTITY language_code.bg "保加利亚语">
+<!ENTITY language_code.ca "加泰罗尼亚语">
+<!ENTITY language_code.zh-CHS "中文简体">
+<!ENTITY language_code.zh-CHT "中文繁体">
+<!ENTITY language_code.cs "捷克语">
+<!ENTITY language_code.da "丹麦语">
+<!ENTITY language_code.nl "荷兰语">
+<!ENTITY language_code.en "英语">
+<!ENTITY language_code.et "爱沙尼亚语">
+<!ENTITY language_code.fi "芬兰语">
+<!ENTITY language_code.fr "法语">
+<!ENTITY language_code.de "德语">
+<!ENTITY language_code.el "希腊语">
+<!ENTITY language_code.ht "海地克里奥尔语">
+<!ENTITY language_code.he "希伯来语">
+<!ENTITY language_code.hi "印地语">
+<!ENTITY language_code.hu "匈牙利语">
+<!ENTITY language_code.id "印度尼西亚语">
+<!ENTITY language_code.it "意大利语">
+<!ENTITY language_code.ja "日本语">
+<!ENTITY language_code.ko "朝鲜语">
+<!ENTITY language_code.lv "拉脱维亚语">
+<!ENTITY language_code.lt "立陶宛语">
+<!ENTITY language_code.no "挪威语">
+<!ENTITY language_code.pl "波兰语">
+<!ENTITY language_code.pt ",葡萄牙语">
+<!ENTITY language_code.ro "罗马尼亚语">
+<!ENTITY language_code.ru "俄罗斯语">
+<!ENTITY language_code.sk "斯洛伐克语">
+<!ENTITY language_code.sl "斯洛文尼亚语">
+<!ENTITY language_code.es "西班牙语">
+<!ENTITY language_code.sv "瑞典语">
+<!ENTITY language_code.th "泰语">
+<!ENTITY language_code.tr "土耳其语">
+<!ENTITY language_code.uk "乌克兰语">
+<!ENTITY language_code.vi "越南语">
