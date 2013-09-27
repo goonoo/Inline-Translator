@@ -31,6 +31,7 @@
 <!ENTITY language_code.nl "네덜란드어">
 <!ENTITY language_code.en "영어">
 <!ENTITY language_code.et "에스토니아어">
+<!ENTITY language_code.fa "Persian(Farsi)">
 <!ENTITY language_code.fi "핀란드어">
 <!ENTITY language_code.fr "프랑스어">
 <!ENTITY language_code.de "독일어">
@@ -58,4 +59,5 @@
 <!ENTITY language_code.th "태국어">
 <!ENTITY language_code.tr "터키어">
 <!ENTITY language_code.uk "우크라이나어">
+<!ENTITY language_code.ur "Urdu">
 <!ENTITY language_code.vi "베트남어">

@@ -23,7 +23,7 @@
 <!ENTITY language_code.empty "不可用">
 <!ENTITY language_code.ar "阿拉伯语">
 <!ENTITY language_code.bg "保加利亚语">
-<!ENTITY language_code.ca "加泰罗尼亚语">
+<!ENTITY language_code.ca "加泰隆语">
 <!ENTITY language_code.zh-CHS "中文简体">
 <!ENTITY language_code.zh-CHT "中文繁体">
 <!ENTITY language_code.cs "捷克语">
@@ -31,6 +31,7 @@
 <!ENTITY language_code.nl "荷兰语">
 <!ENTITY language_code.en "英语">
 <!ENTITY language_code.et "爱沙尼亚语">
+<!ENTITY language_code.fa "波斯语">
 <!ENTITY language_code.fi "芬兰语">
 <!ENTITY language_code.fr "法语">
 <!ENTITY language_code.de "德语">
@@ -47,7 +48,7 @@
 <!ENTITY language_code.lt "立陶宛语">
 <!ENTITY language_code.no "挪威语">
 <!ENTITY language_code.pl "波兰语">
-<!ENTITY language_code.pt ",葡萄牙语">
+<!ENTITY language_code.pt "葡萄牙语">
 <!ENTITY language_code.ro "罗马尼亚语">
 <!ENTITY language_code.ru "俄罗斯语">
 <!ENTITY language_code.sk "斯洛伐克语">
@@ -57,4 +58,5 @@
 <!ENTITY language_code.th "泰语">
 <!ENTITY language_code.tr "土耳其语">
 <!ENTITY language_code.uk "乌克兰语">
+<!ENTITY language_code.ur "乌都语">
 <!ENTITY language_code.vi "越南语">

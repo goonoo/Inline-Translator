@@ -112,6 +112,7 @@
 						<menuitem label="&language_code.nl;" value="nl"/>
 						<menuitem label="&language_code.en;" value="en"/>
 						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fa;" value="fa"/>
 						<menuitem label="&language_code.fi;" value="fi"/>
 						<menuitem label="&language_code.fr;" value="fr"/>
 						<menuitem label="&language_code.de;" value="de"/>
@@ -138,6 +139,7 @@
 						<menuitem label="&language_code.th;" value="th"/>
 						<menuitem label="&language_code.tr;" value="tr"/>
 						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.ur;" value="ur"/>
 						<menuitem label="&language_code.vi;" value="vi"/>
 				  </menupopup>
 				</menulist>
@@ -158,6 +160,7 @@
 						<menuitem label="&language_code.nl;" value="nl"/>
 						<menuitem label="&language_code.en;" value="en"/>
 						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fa;" value="fa"/>
 						<menuitem label="&language_code.fi;" value="fi"/>
 						<menuitem label="&language_code.fr;" value="fr"/>
 						<menuitem label="&language_code.de;" value="de"/>
@@ -184,6 +187,7 @@
 						<menuitem label="&language_code.th;" value="th"/>
 						<menuitem label="&language_code.tr;" value="tr"/>
 						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.ur;" value="ur"/>
 						<menuitem label="&language_code.vi;" value="vi"/>
 				  </menupopup>
 				</menulist>
@@ -209,6 +213,7 @@
 						<menuitem label="&language_code.nl;" value="nl"/>
 						<menuitem label="&language_code.en;" value="en"/>
 						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fa;" value="fa"/>
 						<menuitem label="&language_code.fi;" value="fi"/>
 						<menuitem label="&language_code.fr;" value="fr"/>
 						<menuitem label="&language_code.de;" value="de"/>
@@ -235,6 +240,7 @@
 						<menuitem label="&language_code.th;" value="th"/>
 						<menuitem label="&language_code.tr;" value="tr"/>
 						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.ur;" value="ur"/>
 						<menuitem label="&language_code.vi;" value="vi"/>
 				  </menupopup>
 				</menulist>
@@ -255,6 +261,7 @@
 						<menuitem label="&language_code.nl;" value="nl"/>
 						<menuitem label="&language_code.en;" value="en"/>
 						<menuitem label="&language_code.et;" value="et"/>
+						<menuitem label="&language_code.fa;" value="fa"/>
 						<menuitem label="&language_code.fi;" value="fi"/>
 						<menuitem label="&language_code.fr;" value="fr"/>
 						<menuitem label="&language_code.de;" value="de"/>
@@ -281,6 +288,7 @@
 						<menuitem label="&language_code.th;" value="th"/>
 						<menuitem label="&language_code.tr;" value="tr"/>
 						<menuitem label="&language_code.uk;" value="uk"/>
+						<menuitem label="&language_code.ur;" value="ur"/>
 						<menuitem label="&language_code.vi;" value="vi"/>
 				  </menupopup>
 				</menulist>

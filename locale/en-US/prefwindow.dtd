@@ -31,6 +31,7 @@
 <!ENTITY language_code.nl "Dutch">
 <!ENTITY language_code.en "English">
 <!ENTITY language_code.et "Estonian">
+<!ENTITY language_code.fa "Persian(Farsi)">
 <!ENTITY language_code.fi "Finnish">
 <!ENTITY language_code.fr "French">
 <!ENTITY language_code.de "German">
@@ -57,4 +58,5 @@
 <!ENTITY language_code.th "Thai">
 <!ENTITY language_code.tr "Turkish">
 <!ENTITY language_code.uk "Ukrainian">
+<!ENTITY language_code.ur "Urdu">
 <!ENTITY language_code.vi "Vietnamese">
