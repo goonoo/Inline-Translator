@@ -1,0 +1,15 @@
+{
+  "name": "Inline-Translator",
+  "version": "1.4.0",
+  "author": "mctenshi <mctenshi@gmail.com>",
+  "contributors": [
+    "shangjiyu"
+  ],
+  "private": true,
+  "scripts": {
+  },
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-exec": "latest"
+  }
+}
